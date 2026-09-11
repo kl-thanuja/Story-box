@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    background: #fdfcf9;
-    color: #0b1115;
+    background: #FCFCFA;
+    color: #1F2937;
     overflow-x: hidden;
 }
 
@@ -30,8 +30,8 @@ body::-webkit-scrollbar {
 :root {
     --sb-green: #155b36;
     --sb-green-light: #557846;
-    --sb-border: #e9e2d7;
-    --sb-cream: #fdfcf9;
+    --sb-border: #E5E7EB;
+    --sb-cream: #FCFCFA;
     --sb-soft: #f4f0e6;
 }
 
@@ -45,8 +45,8 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-    border-bottom: 1px solid #deddd9;
-    background: #fdfcf9;
+    border-bottom: 1px solid #E5E7EB;
+    background: #FCFCFA;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #101419;
+    color: #1F2937;
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     height: 2px;
-    background: #101419;
+    background: #1F2937;
 }
 
 /* =========================================
@@ -146,7 +146,7 @@ body::-webkit-scrollbar {
 .green-line {
     width: 40px;
     height: 2px;
-    background: #557846;
+    background: var(--sb-green-light);
     margin-bottom: 35px;
 }
 
@@ -154,7 +154,7 @@ body::-webkit-scrollbar {
     max-width: 560px;
     font-size: 18px;
     line-height: 1.5;
-    color: #171d22;
+    color: #4B5563;
     margin-bottom: 32px;
 }
 
@@ -164,8 +164,8 @@ body::-webkit-scrollbar {
     width: 100%;
     display: flex;
     gap: 3px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid #FCFCFA;
+    border-bottom: 2px solid #FCFCFA;
     margin-bottom: 10px;
 }
 
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
     align-items: center;
     padding: 0 10px;
     font-size: 16px;
-    border-right: 1px solid #d9d7d2;
+    border-right: 1px solid #E5E7EB;
 }
 
 .story-types div:first-child {
@@ -200,17 +200,18 @@ body::-webkit-scrollbar {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 32px;
+    color: #1F2937;
 }
 
 .small-green-line {
     width: 40px;
     height: 2px;
-    background: #557846;
+    background: var(--sb-green-light);
     margin-bottom: 35px;
 }
 
 .hero-message span {
-    color: #557846;
+    color: var(--sb-green-light);
     font-size: 21px;
 }
 
@@ -221,7 +222,7 @@ body::-webkit-scrollbar {
     height: auto;
     overflow: hidden;
     border-radius: 22px;
-    background: #e7e4dc;
+    background: #E5E7EB;
 }
 
 .hero-video {
@@ -262,7 +263,7 @@ body::-webkit-scrollbar {
 
 .product-card {
     min-height: 390px;
-    border: 1px solid #ebe2d5;
+    border: 1px solid #E5E7EB;
     border-radius: 16px;
     padding: 12px 5px 5px;
     display: grid;
@@ -275,7 +276,7 @@ body::-webkit-scrollbar {
 .product-card:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-    border-color: #557846;
+    border-color: var(--sb-green-light);
 }
 
 .product-image-container {
@@ -317,7 +318,7 @@ body::-webkit-scrollbar {
 }
 
 .product-subtitle span {
-    color: #557846;
+    color: var(--sb-green-light);
     font-weight: 700;
 }
 
@@ -327,7 +328,7 @@ body::-webkit-scrollbar {
 }
 
 .green-description {
-    color: #557846;
+    color: var(--sb-green-light);
 }
 
 .product-content p {
@@ -335,12 +336,13 @@ body::-webkit-scrollbar {
     line-height: 1.7;
     max-width: 430px;
     margin-bottom: 22px;
+    color: #4B5563;
 }
 
 .card-divider {
     width: 20px;
     height: 2px;
-    background: #557846;
+    background: var(--sb-green-light);
     margin-bottom: 22px;
 }
 
@@ -355,7 +357,7 @@ body::-webkit-scrollbar {
 }
 
 .card-bottom .green-text {
-    color: #557846;
+    color: var(--sb-green-light);
     font-weight: 700;
     text-align: center;
 }
@@ -373,13 +375,13 @@ body::-webkit-scrollbar {
     min-height: 150px;
     border-radius: 15px;
     background: #f1f1eb;
-    border: 1px solid #e8e7df;
+    border: 1px solid #E5E7EB;
     padding: 14px 38px 20px;
 }
 
 .strip-title {
     text-align: center;
-    color: #557846;
+    color: var(--sb-green-light);
     font-size: 21px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -388,14 +390,14 @@ body::-webkit-scrollbar {
 .content-categories {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    border-bottom: 1px solid #d8d6d0;
+    border-bottom: 1px solid #E5E7EB;
 }
 
 .content-categories span {
     padding: 10px 8px;
     text-align: center;
     font-size: 18px;
-    border-right: 1px solid #d4d2cb;
+    border-right: 1px solid #E5E7EB;
 }
 
 .content-categories span:last-child {
@@ -412,7 +414,7 @@ body::-webkit-scrollbar {
 }
 
 .languages b {
-    color: #557846;
+    color: var(--sb-green-light);
     font-size: 13px;
 }
 
@@ -423,7 +425,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #deddd9;
+    border-top: 1px solid #E5E7EB;
 }
 
 .placeholder-section h2 {
@@ -438,7 +440,7 @@ body::-webkit-scrollbar {
 .sb-section {
     width: 100%;
     background: var(--sb-cream);
-    color: #0b1115;
+    color: #1F2937;
 }
 
 .sb-inner {
@@ -470,7 +472,7 @@ body::-webkit-scrollbar {
 .sb-intro {
     font-size: 21px;
     line-height: 1.5;
-    color: #171d22;
+    color: #4B5563;
 }
 
 /* SECTION 3 */
@@ -500,7 +502,7 @@ body::-webkit-scrollbar {
 
 .sb-use-card {
     min-height: 195px;
-    border: 2px solid var(--sb-border);
+    border: 2px solid #E5E7EB;
     border-radius: 16px;
     display: grid;
     grid-template-columns: 170px 1fr;
@@ -515,7 +517,7 @@ body::-webkit-scrollbar {
 .sb-use-card:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-    border-color: #557846;
+    border-color: var(--sb-green-light);
 }
 
 .sb-icon-circle,
@@ -547,6 +549,7 @@ body::-webkit-scrollbar {
 .sb-use-card p {
     font-size: 18px;
     line-height: 1.55;
+    color: #4B5563;
 }
 
 .sb-bottom-line {
@@ -587,7 +590,7 @@ body::-webkit-scrollbar {
 
 .sb-info-panel {
     min-height: 445px;
-    border: 1px solid var(--sb-border);
+    border: 1px solid #E5E7EB;
     border-radius: 15px;
     padding: 30px 34px;
     background: rgba(255,255,255,.22);
@@ -598,7 +601,7 @@ body::-webkit-scrollbar {
 .sb-info-panel:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-    border-color: #557846;
+    border-color: var(--sb-green-light);
 }
 
 .sb-panel-title {
@@ -667,11 +670,12 @@ body::-webkit-scrollbar {
 .sb-feature-row p {
     font-size: 16px;
     line-height: 1.55;
+    color: #4B5563;
 }
 
 .sb-panel-divider {
     height: 1px;
-    background: #dedbd4;
+    background: #E5E7EB;
     margin: 10px 0 12px;
 }
 
@@ -696,7 +700,7 @@ body::-webkit-scrollbar {
     min-height: 92px;
     margin-top: 20px;
     padding: 15px 45px;
-    border: 1px solid #e1ded3;
+    border: 1px solid #E5E7EB;
     border-radius: 15px;
     background: #f2f0e7;
     display: grid;
@@ -730,12 +734,13 @@ body::-webkit-scrollbar {
 .sb-network-divider {
     width: 1px;
     height: 52px;
-    background: #d6d1c6;
+    background: #E5E7EB;
 }
 
 .sb-network-strip p {
     font-size: 18px;
     line-height: 1.45;
+    color: #4B5563;
 }
 
 /* SECTION 5 */
@@ -791,12 +796,13 @@ body::-webkit-scrollbar {
 .sb-fit-description {
     font-size: 17px;
     line-height: 1.5;
+    color: #4B5563;
 }
 
 .sb-fit-list {
     margin: 18px 0 0 5px;
     padding: 0 0 0 22px;
-    border-left: 1px solid #9ab09b;
+    border-left: 1px solid #E5E7EB;
     list-style: none;
 }
 
@@ -806,6 +812,7 @@ body::-webkit-scrollbar {
     line-height: 1.45;
     margin-bottom: 13px;
     padding-left: 3px;
+    color: #4B5563;
 }
 
 .sb-fit-list li::before {
@@ -820,7 +827,7 @@ body::-webkit-scrollbar {
 }
 
 .sb-talk-row {
-    border-top: 1px solid #d4d1ca;
+    border-top: 1px solid #E5E7EB;
     margin-top: 32px;
     padding-top: 30px;
     display: grid;
@@ -832,6 +839,7 @@ body::-webkit-scrollbar {
 .sb-talk-row p {
     font-size: 17px;
     line-height: 1.5;
+    color: #4B5563;
 }
 
 .sb-beyond-image {
@@ -881,7 +889,7 @@ body::-webkit-scrollbar {
 .sb-talk-description {
     font-size: 24px;
     line-height: 1.65;
-    color: #1a252c;
+    color: #4B5563;
     margin-bottom: 48px;
 }
 
@@ -1132,7 +1140,7 @@ body::-webkit-scrollbar {
 
     .story-types div {
         font-size: 14px;
-        border-bottom: 1px solid #d9d7d2;
+        border-bottom: 1px solid #E5E7EB;
     }
 
     .hero-message {
@@ -1182,7 +1190,7 @@ body::-webkit-scrollbar {
     }
 
     .content-categories span {
-        border-bottom: 1px solid #d4d2cb;
+        border-bottom: 1px solid #E5E7EB;
     }
 
     .languages {
