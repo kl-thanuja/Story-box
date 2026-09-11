@@ -706,6 +706,7 @@ body::-webkit-scrollbar {
     display: grid;
     grid-template-columns: 90px 310px 1px 1fr;
     align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 
