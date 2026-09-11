@@ -19,9 +19,20 @@ body {
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
-    width:0px;
+body::-webkit-scrollbar {
+    width: 0px;
+}
 
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --sb-green: #155b36;
+    --sb-green-light: #557846;
+    --sb-border: #e9e2d7;
+    --sb-cream: #fdfcf9;
+    --sb-soft: #f4f0e6;
 }
 
 /* =========================================
@@ -30,23 +41,16 @@ body::-webkit-scrollbar{
 
 .header {
     height: 110px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 30px;
-
     border-bottom: 1px solid #deddd9;
-
     background: #fdfcf9;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
 }
-
 
 /* BRAND */
 
@@ -57,9 +61,7 @@ body::-webkit-scrollbar{
 .brand-title {
     font-size: 28px;
     font-weight: 700;
-
     letter-spacing: -1px;
-
     margin-bottom: 5px;
 }
 
@@ -67,7 +69,6 @@ body::-webkit-scrollbar{
     font-size: 16px;
     font-weight: 400;
 }
-
 
 /* NAVIGATION */
 
@@ -95,7 +96,6 @@ body::-webkit-scrollbar{
     opacity: 0.6;
 }
 
-
 /* ACTIVE NAVIGATION */
 
 .navigation a.active {
@@ -104,18 +104,13 @@ body::-webkit-scrollbar{
 
 .navigation a.active::after {
     content: "";
-
     position: absolute;
-
     bottom: 25px;
     left: 0;
     right: 0;
-
     height: 2px;
-
     background: #101419;
 }
-
 
 /* =========================================
    HERO
@@ -123,52 +118,37 @@ body::-webkit-scrollbar{
 
 .hero-section {
     min-height: calc(100vh - 110px);
-
     display: grid;
-
     grid-template-columns: 1fr 1.15fr;
-
     gap: 50px;
-
     padding: 45px 50px 40px 70px;
-
     align-items: center;
 }
 
-
-/* =========================================
-   HERO CONTENT
-========================================= */
+/* HERO CONTENT */
 
 .hero-content {
     padding-bottom: 20px;
 }
-.encounter{
+
+.encounter {
     color: var(--sb-green);
 }
+
 .hero-content h1 {
     font-size: clamp(45px, 5vw, 82px);
-
     line-height: 0.99;
     letter-spacing: -4px;
     font-weight: 600;
     margin-bottom: 32px;
 }
 
-
-/* GREEN LINE */
-
 .green-line {
     width: 40px;
     height: 2px;
-
     background: #557846;
-
     margin-bottom: 35px;
 }
-
-
-/* DESCRIPTION */
 
 .hero-description {
     max-width: 560px;
@@ -178,32 +158,23 @@ body::-webkit-scrollbar{
     margin-bottom: 32px;
 }
 
-
-/* =========================================
-   STORY TYPES
-========================================= */
+/* STORY TYPES */
 
 .story-types {
     width: 100%;
-
     display: flex;
     gap: 3px;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
-
     margin-bottom: 10px;
 }
 
 .story-types div {
     min-height: 44px;
-
     display: flex;
     align-items: center;
-
     padding: 0 10px;
-
     font-size: 16px;
-
     border-right: 1px solid #d9d7d2;
 }
 
@@ -215,50 +186,35 @@ body::-webkit-scrollbar{
     border-right: none;
 }
 
-
-/* =========================================
-   HERO MESSAGE
-========================================= */
+/* HERO MESSAGE */
 
 .hero-message {
     background: rgba(255, 255, 255, 0.402);
-
     padding: 25px 20px 30px 7px;
-
     margin-left: -12px;
-
     margin-top: 12px;
-
     max-width: 580px;
 }
 
 .hero-message p {
     font-size: 18px;
-
     line-height: 1.5;
-
     margin-bottom: 32px;
 }
 
 .small-green-line {
     width: 40px;
     height: 2px;
-
     background: #557846;
-
     margin-bottom: 35px;
 }
 
 .hero-message span {
     color: #557846;
-
     font-size: 21px;
 }
 
-
-/* =========================================
-   HERO VIDEO
-========================================= */
+/* HERO VIDEO */
 
 .hero-video-container {
     width: 100%;
@@ -273,20 +229,16 @@ body::-webkit-scrollbar{
     height: 100%;
     object-fit: contain;
     display: block;
-    background-color:transparent;
+    background-color: transparent;
 }
 
-
 /* =========================================
-   SECOND SECTION
+   SECOND SECTION (WAYS SECTION)
 ========================================= */
 
 .ways-section {
     padding: 5px 68px 40px;
 }
-
-
-/* SECTION HEADING */
 
 .section-heading {
     margin-bottom: 18px;
@@ -294,90 +246,57 @@ body::-webkit-scrollbar{
 
 .section-heading h2 {
     font-size: 55px;
-
     line-height: 1.08;
-
     letter-spacing: -2.5px;
-
     font-weight: 700;
-
     margin-bottom: 22px;
 }
 
-
-/* =========================================
-   PRODUCT CARDS
-========================================= */
+/* PRODUCT CARDS */
 
 .product-cards {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 34px;
 }
 
 .product-card {
     min-height: 390px;
-
     border: 1px solid #ebe2d5;
-
     border-radius: 16px;
-
     padding: 12px 5px 5px;
-
     display: grid;
-
     grid-template-columns: 35% 65%;
-
     background: rgba(255, 255, 255, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     will-change: transform, box-shadow;
 }
 
 .product-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  
-  box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-  
-  border-color: #557846;
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
+    border-color: #557846;
 }
-/* =========================================
-   PRODUCT IMAGE
-========================================= */
 
 .product-image-container {
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     min-height: 350px;
 }
 
 .product-image {
     width: 100%;
-
     max-width: 200px;
-
     max-height: 350px;
-
     object-fit: contain;
-
     display: block;
 }
 
 .kids-image {
-
     margin: 60px 0px 60px 5px;
-
     min-height: 220px;
 }
-
-
-/* =========================================
-   PRODUCT CONTENT
-========================================= */
 
 .product-content {
     padding: 30px 15px 0px 15px;
@@ -385,24 +304,15 @@ body::-webkit-scrollbar{
 
 .product-content h3 {
     font-size: 32px;
-
     letter-spacing: -1px;
-
     margin-bottom: 12px;
 }
 
-
-/* SUBTITLE */
-
 .product-subtitle {
     display: flex;
-
     gap: 10px;
-
     font-size: 21px;
-
     line-height: 1.15;
-
     margin-bottom: 15px;
 }
 
@@ -420,9 +330,6 @@ body::-webkit-scrollbar{
     color: #557846;
 }
 
-
-/* CARD TEXT */
-
 .product-content p {
     font-size: 15px;
     line-height: 1.7;
@@ -430,29 +337,18 @@ body::-webkit-scrollbar{
     margin-bottom: 22px;
 }
 
-
-/* DIVIDER */
-
 .card-divider {
     width: 20px;
-
     height: 2px;
-
     background: #557846;
-
     margin-bottom: 22px;
 }
-
-
-/* =========================================
-   CARD BOTTOM
-========================================= */
 
 .card-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    flex-direction:column;
+    align-items: flex-end;
+    flex-direction: column;
     font-size: 15px;
     text-align: right;
     gap: 2px;
@@ -462,18 +358,15 @@ body::-webkit-scrollbar{
     color: #557846;
     font-weight: 700;
     text-align: center;
-
 }
-.card-bottom-text{
+
+.card-bottom-text {
     display: flex;
     justify-content: center;
     gap: 3px;
 }
 
-
-/* =========================================
-   CONTENT STRIP
-========================================= */
+/* CONTENT STRIP */
 
 .content-strip {
     margin-top: 40px;
@@ -484,40 +377,24 @@ body::-webkit-scrollbar{
     padding: 14px 38px 20px;
 }
 
-
-/* TITLE */
-
 .strip-title {
     text-align: center;
-
     color: #557846;
-
     font-size: 21px;
-
     font-weight: 600;
-
     margin-bottom: 5px;
 }
 
-
-/* CATEGORIES */
-
 .content-categories {
     display: grid;
-
-    grid-template-columns:
-        repeat(7, 1fr);
-
+    grid-template-columns: repeat(7, 1fr);
     border-bottom: 1px solid #d8d6d0;
 }
 
 .content-categories span {
     padding: 10px 8px;
-
     text-align: center;
-
     font-size: 18px;
-
     border-right: 1px solid #d4d2cb;
 }
 
@@ -525,289 +402,38 @@ body::-webkit-scrollbar{
     border-right: none;
 }
 
-
-/* LANGUAGES */
-
 .languages {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 24px;
-
     padding-top: 17px;
-
     font-size: 19px;
 }
 
 .languages b {
     color: #557846;
-
     font-size: 13px;
 }
 
-
-/* =========================================
-   PLACEHOLDER SECTIONS
-========================================= */
+/* PLACEHOLDER SECTIONS */
 
 .placeholder-section {
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     border-top: 1px solid #deddd9;
 }
 
 .placeholder-section h2 {
     font-size: 60px;
-
     letter-spacing: -2px;
 }
 
-
 /* =========================================
-   RESPONSIVE
+   STORY BOX — SECTIONS 3–6 SHARED
 ========================================= */
-
-@media (max-width: 1200px) {
-
-    .navigation {
-        gap: 20px;
-    }
-
-    .header {
-        padding: 0 25px;
-    }
-
-    .hero-section {
-        padding-left: 50px;
-        padding-right: 35px;
-
-        gap: 40px;
-    }
-
-    .hero-video-container {
-        height: 650px;
-    }
-
-    .hero-content h1 {
-        font-size: 62px;
-    }
-
-    .hero-description {
-        font-size: 20px;
-    }
-
-}
-
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    .header {
-        height: auto;
-
-        min-height: 90px;
-
-        padding: 20px 25px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
-    }
-
-    .brand {
-        min-width: auto;
-    }
-
-    .navigation {
-        width: 100%;
-
-        overflow-x: auto;
-
-        height: 45px;
-
-        gap: 25px;
-    }
-
-    .navigation a {
-        height: 45px;
-    }
-
-    .navigation a.active::after {
-        bottom: 0;
-    }
-
-
-    .hero-section {
-        grid-template-columns: 1fr;
-
-        padding: 60px 35px;
-    }
-
-    .hero-video-container {
-        height: 600px;
-
-        order: -1;
-    }
-
-    .hero-content h1 {
-        font-size: 65px;
-    }
-
-
-    .product-cards {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .header {
-        padding: 18px 20px;
-    }
-
-    .brand-title {
-        font-size: 24px;
-    }
-
-    .brand-subtitle {
-        font-size: 13px;
-    }
-
-    .navigation {
-        gap: 20px;
-    }
-
-    .navigation a {
-        font-size: 13px;
-    }
-
-
-    .hero-section {
-        padding: 35px 20px 50px;
-
-        gap: 35px;
-    }
-
-    .hero-video-container {
-        height: 450px;
-
-        border-radius: 18px;
-    }
-
-    .hero-content h1 {
-        font-size: 48px;
-
-        letter-spacing: -2.5px;
-    }
-
-    .hero-description {
-        font-size: 18px;
-    }
-
-
-    .story-types {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .story-types div {
-        font-size: 14px;
-
-        border-bottom: 1px solid #d9d7d2;
-    }
-
-
-    .hero-message {
-        margin-left: 0;
-    }
-
-    .hero-message p {
-        font-size: 18px;
-    }
-
-    .hero-message span {
-        font-size: 17px;
-    }
-
-
-    .ways-section {
-        padding: 60px 20px;
-    }
-
-    .section-heading h2 {
-        font-size: 40px;
-
-        letter-spacing: -1.5px;
-    }
-
-
-    .product-card {
-        grid-template-columns: 1fr;
-
-        padding: 20px;
-    }
-
-    .product-image-container {
-        min-height: 230px;
-    }
-
-    .product-content {
-        padding: 15px 5px;
-    }
-
-    .product-content h3 {
-        font-size: 28px;
-    }
-
-
-    .content-strip {
-        padding: 15px;
-    }
-
-    .content-categories {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .content-categories span {
-        border-bottom: 1px solid #d4d2cb;
-    }
-
-    .languages {
-        gap: 12px;
-
-        font-size: 16px;
-    }
-
-}
-
-/* =========================================================
-   STORY BOX — SECTIONS 3–6
-   This file is separate so style.css remains unchanged.
-   ========================================================= */
-
-:root {
-    --sb-green: #155b36;
-    --sb-green-light: #557846;
-    --sb-border: #e9e2d7;
-    --sb-cream: #fdfcf9;
-    --sb-soft: #f4f0e6;
-}
-
-
-/* ================= SHARED ================= */
 
 .sb-section {
     width: 100%;
@@ -847,8 +473,7 @@ body::-webkit-scrollbar{
     color: #171d22;
 }
 
-
-/* ================= SECTION 3 ================= */
+/* SECTION 3 */
 
 .sb-use-section {
     padding: 95px 0 70px;
@@ -887,21 +512,18 @@ body::-webkit-scrollbar{
     will-change: transform, box-shadow;
 }
 
-
 .sb-use-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  
-  box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-  
-  border-color: #557846;
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
+    border-color: #557846;
 }
 
 .sb-icon-circle,
 .sb-round-icon {
-    width: 112px;
-    height: 112px;
+    width: 92px;
+    height: 92px;
     border-radius: 50%;
-    background: #f4f0e4;
+    background: #f4f0e4ef;
     color: var(--sb-green);
     display: flex;
     align-items: center;
@@ -942,8 +564,7 @@ body::-webkit-scrollbar{
     margin-top: 25px;
 }
 
-
-/* ================= SECTION 4 ================= */
+/* SECTION 4 */
 
 .sb-own-section {
     padding: 30px 0 30px;
@@ -973,12 +594,11 @@ body::-webkit-scrollbar{
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     will-change: transform, box-shadow;
 }
+
 .sb-info-panel:hover {
-  transform: translateY(-6px) scale(1.02);
-  
-  box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
-  
-  border-color: #557846;
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px -10px rgba(0, 118, 255, 0.25);
+    border-color: #557846;
 }
 
 .sb-panel-title {
@@ -1064,8 +684,8 @@ body::-webkit-scrollbar{
 }
 
 .sb-feature-row .sb-round-icon {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60%;
 }
 
 .sb-feature-row strong {
@@ -1118,8 +738,7 @@ body::-webkit-scrollbar{
     line-height: 1.45;
 }
 
-
-/* ================= SECTION 5 ================= */
+/* SECTION 5 */
 
 .sb-beyond-section {
     padding: 55px 0 60px;
@@ -1146,7 +765,7 @@ body::-webkit-scrollbar{
 
 .sb-intro-5 {
     margin-bottom: 35px;
-    font-size:18px
+    font-size: 18px;
 }
 
 .sb-content-fit {
@@ -1232,8 +851,7 @@ body::-webkit-scrollbar{
     display: block;
 }
 
-
-/* ================= SECTION 6 ================= */
+/* SECTION 6 */
 
 .sb-talk-section {
     min-height: 700px;
@@ -1294,11 +912,39 @@ body::-webkit-scrollbar{
     font-weight: 400;
 }
 
+/* =========================================
+   MEDIA QUERIES
+========================================= */
 
-/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+    .navigation {
+        gap: 20px;
+    }
+
+    .header {
+        padding: 0 25px;
+    }
+
+    .hero-section {
+        padding-left: 50px;
+        padding-right: 35px;
+        gap: 40px;
+    }
+
+    .hero-video-container {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 62px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 1100px) {
-
     .sb-inner {
         width: min(92%, 900px);
     }
@@ -1324,12 +970,62 @@ body::-webkit-scrollbar{
     .sb-network-strip {
         grid-template-columns: 75px 250px 1px 1fr;
     }
-
 }
 
+/* TABLET LAYOUT */
+
+@media (max-width: 900px) {
+    .header {
+        height: auto;
+        min-height: 90px;
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .brand {
+        min-width: auto;
+    }
+
+    .navigation {
+        width: 100%;
+        overflow-x: auto;
+        height: 45px;
+        gap: 25px;
+    }
+
+    .navigation a {
+        height: 45px;
+    }
+
+    .navigation a.active::after {
+        bottom: 0;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 60px 35px;
+    }
+
+    /* Fixed order and extra box background */
+    .hero-video-container {
+        height: auto;
+        order: initial;
+        background: transparent;
+        border-radius: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 65px;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media (max-width: 800px) {
-
     .sb-use-section,
     .sb-own-section {
         padding: 65px 0 55px;
@@ -1384,11 +1080,115 @@ body::-webkit-scrollbar{
     .sb-talk-description {
         font-size: 22px;
     }
-
 }
 
+/* MOBILE LAYOUT */
 
 @media (max-width: 600px) {
+    .header {
+        padding: 18px 20px;
+    }
+
+    .brand-title {
+        font-size: 24px;
+    }
+
+    .brand-subtitle {
+        font-size: 13px;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .navigation a {
+        font-size: 13px;
+    }
+
+    .hero-section {
+        padding: 35px 20px 50px;
+        gap: 35px;
+    }
+
+    /* Clean mobile video presentation */
+    .hero-video-container {
+        height: auto;
+        background: transparent;
+        border-radius: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .story-types {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .story-types div {
+        font-size: 14px;
+        border-bottom: 1px solid #d9d7d2;
+    }
+
+    .hero-message {
+        margin-left: 0;
+    }
+
+    .hero-message p {
+        font-size: 18px;
+    }
+
+    .hero-message span {
+        font-size: 17px;
+    }
+
+    .ways-section {
+        padding: 40px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .product-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .product-image-container {
+        min-height: 230px;
+    }
+
+    .product-content {
+        padding: 15px 5px;
+    }
+
+    .product-content h3 {
+        font-size: 28px;
+    }
+
+    .content-strip {
+        padding: 15px;
+    }
+
+    .content-categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-categories span {
+        border-bottom: 1px solid #d4d2cb;
+    }
+
+    .languages {
+        gap: 12px;
+        font-size: 16px;
+    }
 
     .sb-inner,
     .sb-beyond-inner {
@@ -1396,17 +1196,17 @@ body::-webkit-scrollbar{
     }
 
     .sb-eyebrow {
-        font-size: 35px;
-
+        font-size: 15px;
+        margin-bottom: 20px;
     }
 
     .sb-heading-3,
     .sb-heading-5 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .sb-heading-4 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .sb-intro {
@@ -1480,11 +1280,11 @@ body::-webkit-scrollbar{
     }
 
     .sb-beyond-image {
-        height: 390px;
+        height: 300px;
     }
 
     .sb-talk-section {
-        min-height: 650px;
+        min-height: 500px;
         padding: 50px 20px;
     }
 
@@ -1512,5 +1312,4 @@ body::-webkit-scrollbar{
     .sb-talk-button span {
         font-size: 32px;
     }
-
 }
