@@ -28,8 +28,8 @@ body::-webkit-scrollbar {
 ========================================= */
 
 :root {
-    --sb-green: #155b36;
-    --sb-green-light: #557846;
+    --sb-green: #e6501d;
+    --sb-green-light: #e6501d;
     --sb-border: #E5E7EB;
     --sb-cream: #FCFCFA;
     --sb-soft: #f4f0e6;
@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 .brand-title {
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     margin-bottom: 5px;
 }
 
@@ -877,7 +877,7 @@ body::-webkit-scrollbar {
 }
 
 .sb-heading-6 {
-    color: #092d21;
+    color: #e6501d;
     font-size: 90px;
     margin: 30px 0 30px;
 }
@@ -897,7 +897,7 @@ body::-webkit-scrollbar {
     width: 410px;
     min-height: 105px;
     border-radius: 18px;
-    background: #145b36;
+    background: #e6501d;
     color: white;
     text-decoration: none;
     display: flex;
